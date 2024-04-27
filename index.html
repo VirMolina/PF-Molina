@@ -1,82 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./CSS/styles.css"/>
-    <title>Diseño de experiencias Home </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bs 5.2 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- bs 5.2 fin -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Ingeniería de experiencias Home </title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img id="logo" src="./assets/images/logo solo-02.png" alt="Logo PD"></a>
-        <nav class="header">
-            <ul>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/aplicaciones.html">APLICACIONES</a></li>
-                <li><a href="./pages/proyectos.html">PROYECTOS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>         
+        <!-- navbar inicia -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img id="logo" src="./assets/images/logo solo-02.png"
+                        alt="Logo PD"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/aplicaciones.html">APLICACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar fin -->
     </header>
-    
+
     <main>
-        <!-- Foto portada -->
+        <!-- Foto portada inicia -->
         <section class="index">
             <div class="index-title">
-                <h1>Transformamos lugares en experiencias</h1>    
+                <h1>Transformamos lugares en experiencias</h1>
             </div>
         </section>
+        <!-- Foto portada fin -->
 
-        <!-- Texto descripción -->
+        <!-- Texto descripción inicia -->
         <section class="description-home">
             <div class="nleft">
                 <h2>Que hacemos</h2>
             </div>
             <div class="nright">
-                <p>Somos especialistas en la integración de tecnología audiovisual en todo ámbito o actividad en la que sea requerida. Desde 1996, realizamos el diseño, provisión y puesta en marcha de cualquier sistema tecnológico AV incorporando los últimos adelantos del mercado, siguiendo los más altos estándares técnicos.</p>
-                <p>Diseñamos experiencias novedosas y eficaces de inmersión en interactividad para cultura, arquitectura y espacios corporativos.</p>
+                <p>Somos especialistas en la integración de tecnología audiovisual en todo ámbito o actividad en la que
+                    sea requerida. Desde 1996, realizamos el diseño, provisión y puesta en marcha de cualquier sistema
+                    tecnológico AV incorporando los últimos adelantos del mercado, siguiendo los más altos estándares
+                    técnicos.</p>
+                <p>Diseñamos experiencias novedosas y eficaces de inmersión en interactividad para cultura, arquitectura
+                    y espacios corporativos.</p>
             </div>
         </section>
+        <!-- Texto descripción fin -->
 
-        <!-- Carrousel aplicaciones -->
+        <!-- Carrousel aplicaciones inicia -->
         <section class="slider-aplications">
             <article class="slider-museum">
                 <div class="slider-info">
                     <h2>Museos que cautivan con experiencias multisensoriales</h2>
                     <a class="button">MAS INFO</a>
                 </div>
-            </article>       
+            </article>
         </section>
+        <!-- Carrousel aplicaciones fin -->
 
-        <!-- Tarjetas proyectos destacados -->
+        <!-- Tarjetas proyectos destacados inicia -->
         <h2 class="lateral">Proyectos destacados</h2>
-        <section class="proyects">  
+        <section class="proyects">
             <article class="card">
                 <div class="card-image"></div>
                 <div class="card-text">
                     <h3 class="card-title">Museo Explora Salta</h3>
                     <h4 class="card-province">Salta</h4>
-                    <p class="card-description">Explora Salta es un complejo museológico y cultural que vincula la histórica casa de Juan Galo Leguizamón con la contigua de Arias Rengel. La propiedad se utilizó como lienzo para hablar de Salta y su Gente. El complejo presenta un Museo Interactivo, un Exploratorio Infantil y un Centro de Diseño.
-                    El museo interactivo se desarrolla utilizando 11 salas de recorrido unidireccional. Cada sala cuenta con una “atracción” principal: algunas veces es un espectáculo audiovisual, otras un elemento escenográfico y otras, ambas situaciones en conjunto. También, durante todo el recorrido diferentes estaciones interactivas invitan a los visitantes a participar y jugar permitiendo la comprensión rápida y recordación de los temas del museo.</p>    
-                </div>          
+                    <p class="card-description">Explora Salta es un complejo museológico y cultural que vincula la histórica casa de Juan Galo Leguizamón con la contigua de Arias Rengel. La propiedad se utilizó como lienzo para hablar de Salta y su Gente. El complejo presenta un Museo Interactivo, un Exploratorio Infantil y un Centro de Diseño. El museo interactivo se desarrolla utilizando 11 salas de recorrido unidireccional. Cada sala cuenta con una “atracción” principal: algunas veces es un espectáculo audiovisual, otras un elemento escenográfico y otras, ambas situaciones en conjunto. También, durante todo el recorrido diferentes estaciones interactivas invitan a los visitantes a participar y jugar permitiendo la comprensión rápida y recordación de los temas del museo.</p>
+                </div>
             </article>
         </section>
+        <!-- Tarjetas proyectos destacados fin -->
     </main>
     
     <footer>
+        <!-- suscripción newsletter inicia -->
         <section class="newsletter">
             <h4>¿Querés suscribirte a nuestro Newsletter?</h4>
             <input type="email" required placeholder="Ingresá tu email">
             <button type="button">Suscribite</button>
         </section>
+        <!-- suscripción newsletter fin -->
+
         <section class="footer">
             <h2 class="center">INTERACTUA CON NOSOTROS</h2>
-            
-            <!-- Íconos redes sociales -->
-            <div class="social-icons">              
+
+            <!-- Íconos redes sociales inicia -->
+            <div class="social-icons">
                 <a href="">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -85,42 +122,54 @@
                 </a>
                 <a href="">
                     <i class="fa-brands fa-youtube"></i>
-                </a>     
+                </a>
                 <a href="">
                     <i class="fa-brands fa-pinterest"></i>
-                </a>     
+                </a>
             </div>
+            <!-- Íconos redes sociales fin -->
 
-            <!-- Menu -->
+            <!-- Menu inicia -->
             <table class="menu-footer">
                 <tr>
                     <th>NOSOTROS</th>
                     <th>APLICACIONES</th>
                     <th>PROYECTOS</th>
                     <th>CONTACTO</th>
-                    
                 </tr>
                 <tr>
                     <td><a href="./pages/nosotros.html#sobre-nosotros">Quienes somos</a></td>
                     <td><a href="./pages/aplicaciones.html#cultura">Cultura y entretenimiento</a></td>
                     <td><a href="./pages/proyectos.html">Museos</a></td>
                     <td>Rincón 1339, CABA</td>
-                </tr>    
+                </tr>
                 <tr>
-                    <td><a href="./pages/nosotros.html#como-trabajamos" >Como trabajamos</a></td>
+                    <td><a href="./pages/nosotros.html#como-trabajamos">Como trabajamos</a></td>
                     <td><a href="./pages/aplicaciones.html#arquitectura">Arquitectura</a></td>
                     <td><a href="./pages/proyectos.html">Arquitectura digital</a></td>
                     <td>pdmarketing@proyecciones.net</td>
-                </tr>    
+                </tr>
                 <tr>
                     <td><a href="./pages/nosotros.html#equipo">Nuestro equipo</a></td>
                     <td><a href="./pages/aplicaciones.html#corporativo">Corporativo</a></td>
                     <td><a href="./pages/proyectos.html">Parques temáticos</a></td>
                     <td>Tel. (5411) 5353-1110 </td>
-                </tr> 
+                </tr>
             </table>
+            <!-- Menu fin --> 
+
             <p class="centrado">Copyright by Proyecciones Digitales</p>
-        </section>      
+        </section>
     </footer>
+
+    <!-- bs 5.2 inicia -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+    <!-- bs 5.2 fin -->
 </body>
+
 </html>

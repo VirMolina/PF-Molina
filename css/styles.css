@@ -14,36 +14,25 @@ body {
     background-color: white;
 }
 
-/* MENÚ */
+/* NAV BAR */
 
-header {
-    background-color: rgba(4, 4, 4, 0.897)  ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 10%;
-    padding: 20px;
+.navbar {
+    background-color: rgba(4, 4, 4, 0.897);
 }
 #logo {
     height: 50px;
 } 
-.header ul li {
-    display: inline-block; 
-    list-style: none;
-    padding: 0 10px;
+.nav-link {
+    color: #fff !important;
+    font-size: 14px !important;
+    font-family:  "Poppins", sans-serif !important;
 }
-.header a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-family:  "Poppins", sans-serif;
-}
-.header a:hover {
+.nav-link:hover {
     color: #119DA4;
 }
-
+.navbar-toggler {
+    color: #fff;
+}
 
 
 /* TEXTO */
@@ -51,7 +40,7 @@ h1 {
     text-transform: uppercase;
     font-family:"Dosis", sans-serif;
     font-size: 45px;
-    color: #040404;
+    color: #fff;
 }
 h2, h3, h4 {
     text-transform: uppercase;
@@ -100,7 +89,7 @@ p {
     font-family:"Dosis", sans-serif;
     font-size: 45px;
     color: #040404;
-    text-shadow: 0 0 5px #ccc;
+    text-shadow: 0 0 5px #000;
     padding-left: 50px;
     width: 80%;
 }
@@ -441,9 +430,6 @@ footer {
     .card-image{
         min-height: 250px;
         width: 100%;
-        background-image: url(../assets/images/Explora\ Salta.png);
-        background-size: cover;
-        background-position: center; 
     }
     .card-text {
         width: 100%;
