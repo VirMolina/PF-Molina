@@ -68,6 +68,7 @@ p {
     background-color: #119DA4; 
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: medium;
     font-family: "Poppins", sans-serif;
     padding: 5px 20px;
@@ -106,6 +107,7 @@ p {
 
 
 /* SLIDER APLICACIONES DEL HOME */
+
 .slider-museum {
     height: 600px;
     width: 100%;
@@ -114,7 +116,7 @@ p {
     justify-content: center;
     background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/boca.png);
     background-size: cover;
-    background-position: center;   
+    background-position: center;     
 }
 .slider-info {
     text-align: center;
@@ -139,12 +141,16 @@ p {
 
 
 /* FICHAS CASOS DE ÉXITO */
-.proyects {
+
+.projects-title {
+    padding-top: 25px;
+}
+.projects {
     padding: 30px;
-    display: grid;
+    display: grid; 
     place-items: center;
 }
-.card{   
+.projects-card{   
     border: 2px solid #13505B;
     width: 90%;
     padding: 10px 10px;
@@ -191,18 +197,25 @@ p {
 
 /* FOOTER */
 footer {
-    background-color: #D7D9CE
-    ;
+    background-color: #D7D9CE;
 }
 .newsletter {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 60px);
+    text-align: center;
     width: 100%;
     max-width: 100%; 
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-top: 5%;
     background-color: #13505B;
     color: white;
-    justify-content: space-evenly;
+}
+.item {
+    padding: 20px;
+}
+.item2 {
+    padding-top: 30px;
 }
 .footer {
     padding: 30px;
@@ -421,7 +434,12 @@ footer {
         padding: 60px 70px 50px 0;
         text-align: left;
     }
-    .card {
+    
+    .projects-title {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .projects-card {
         display: flex;
         width: 70%;
         padding: 10px 20px;
@@ -434,6 +452,7 @@ footer {
     .card-text {
         width: 100%;
         padding: 30px;
+        text-align: left;
     }
     .card-province {
         padding: 10px 0 20px 0;
