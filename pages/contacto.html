@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Experiencia Contacto</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img id="logo" src="../assets/images/logo solo-02.png" alt="Logo PD"></a>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="aplicaciones.html">APLICACIONES</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>         
+    </header>
+    
+    <main>
+        <section class="portada"> <img class="foto-portada" src="../assets/images/explora salta 2.png" alt="Museo del Deporte" ></section>
+        <section class="formulario">
+            <h3>¡Contactate! Estaremos encantados de responder tus preguntas. ¡Trabajemos juntos!</h3>
+            <form action="enviar.php" method="post">
+                <div>
+                    <label for="">Nombre</label>
+                <input type="text" required placeholder="ingresa tu nombre"> 
+                </div>
+                <div>
+                    <label for="">Organización</label>
+                <input type="text" required placeholder="ingresa tu organización">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                <input type="email" required placeholder="ingresa tu email"> 
+                </div>
+                <div>
+                    <label for="">Teléfono</label>
+                <input type="número" required placeholder="ingresa tu teléfono"> 
+                </div>
+                <div>
+                    <label for="">Consulta</label><br>
+                <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Escribe tu consulta"></textarea>
+                </div>
+                <div><button type="button">Enviar mensaje</button></div>
+            </form> 
+        </section>
+    </main>
+    
+    <footer>
+        <section class="newsletter">
+            <h4>¿Querés suscribirte a nuestro Newsletter?</h4>
+            <input type="email" required placeholder="Ingresá tu email">
+            <button type="button">Suscribite</button>
+        </section>
+        <section class="titulo-footer">
+            <h2 class="centrado">INTERACTUA CON NOSOTROS</h2>
+            <div class="social-iconos">
+                <a href="https://www.linkedin.com/company/1147116/admin/feed/posts/">
+                <img src="../assets/icons/linkedin.png" alt="LinkedIn"></img>
+                </a>
+                <a href="https://www.instagram.com/proyeccionesdigitales/">
+                <img src="../assets/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@proyeccionesdigitaless.a.-2785/about">
+                <img src="../assets/icons/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://ar.pinterest.com/proyeccionesd/">
+                <img src="../assets/icons/pinterest.png" alt="Pinterest">
+                </a>          
+            </div>
+            <table class="menu-footer">
+                <tr>
+                    <th>NOSOTROS</th>
+                    <th>APLICACIONES</th>
+                    <th>PROYECTOS</th>
+                    <th>CONTACTO</th>
+                    
+                </tr>
+                <tr>
+                    <td><a href="nosotros.html#sobre-nosotros">Quienes somos</a></td>
+                    <td><a href="aplicaciones.html#cultura">Cultura y entretenimiento</a></td>
+                    <td><a href="proyectos.html">Museos</a></td>
+                    <td>Rincón 1339, CABA</td>
+                </tr>    
+                <tr>
+                    <td><a href="nosotros.html#como-trabajamos" >Como trabajamos</a></td>
+                    <td><a href="aplicaciones.html#arquitectura">Arquitectura</a></td>
+                    <td><a href="proyectos.html">Arquitectura digital</a></td>
+                    <td>pdmarketing@proyecciones.net</td>
+                </tr>    
+                <tr>
+                    <td><a href="nosotros.html#equipo">Nuestro equipo</a></td>
+                    <td><a href="aplicaciones.html#corporativo">Corporativo</a></td>
+                    <td><a href="proyectos.html">Parques temáticos</a></td>
+                    <td>Tel. (5411) 5353-1110 </td>
+                </tr>    
+            </table>
+            <p class="centrado">Copyright by Proyecciones Digitales</p>
+        </section>       
+    </footer>
+</body>
+</html>
