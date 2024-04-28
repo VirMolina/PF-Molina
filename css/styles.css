@@ -27,7 +27,7 @@ body {
     font-size: 14px !important;
     font-family:  "Poppins", sans-serif !important;
 }
-.nav-link:hover {
+.nav-link a:hover {
     color: #119DA4;
 }
 .navbar-toggler {
@@ -120,16 +120,16 @@ p {
 }
 .slider-info {
     text-align: center;
-    width: 50%;
+    width: 90%;
 }
 .slider-info h2 {
     font-family:"Dosis", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     text-transform: uppercase;
     align-items: center;
     text-shadow: 0 0 5px #000;
-    padding-bottom: 40px;
+    padding: 40px 10px;
 }
 /* .card-button {
     top: 70%;
@@ -205,18 +205,25 @@ footer {
     grid-template-rows: repeat(3, 60px);
     text-align: center;
     width: 100%;
-    max-width: 100%; 
-    padding: 20px 20px;
     margin-top: 5%;
+    padding: 10px 0;
     background-color: #13505B;
     color: white;
 }
-.item {
-    padding: 20px;
+.newsletter .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
-.item2 {
-    padding-top: 30px;
+.item1 {
+    font-size: 7px;
 }
+.newsletter input {
+    width: 50%;
+    height: 25px;
+}
+
 .footer {
     padding: 30px;
 }
@@ -231,10 +238,19 @@ footer {
         letter-spacing: 8px;
 }   
 .menu-footer {
-    width: 100%;
+    align-items: center;
     text-align: center;
     font-family: "Dosis", sans-serif;
-    padding: 20px 0 30px;
+    padding: 20px 0 30px; 
+}
+.menu-footer ul {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.menu-footer a {
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -343,7 +359,7 @@ footer {
     padding: 10px;
 }
 
-/* Media queries */
+/*COMIENZO DE MEDIA QUERIES */
 @media only screen and (min-width:320px) and (max-width:768px) {
     /* .galeria{
         grid-template-columns: 1fr 1fr;
@@ -360,7 +376,25 @@ footer {
     }
 }
 
- @media only screen and (min-width:768px) and (max-width:1024px){
+@media only screen and (min-width: 576px) {
+    .slider-info {
+        width: 80%;
+    }
+    .slider-info h2 {
+        font-size: 35px;
+    }
+    .newsletter input {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .slider-info {
+        width: 50%;
+    }
+    .slider-info h2 {
+        font-size: 40px;
+    }
     .description-home{
         display: flex;
         align-items: center;
@@ -374,6 +408,9 @@ footer {
         width: 100%;
         padding: 40px;
         text-align: left;
+    }
+    .menu-footer a:hover {
+        color:#13505B;
     }
     /*.galeria{
         grid-template-columns: 1fr 1fr 1fr;
@@ -420,6 +457,13 @@ footer {
 
 
 @media only screen and (min-width:1024px){
+    .button a.hover {
+        background-color: #D7D9CE;
+        color: #040404;
+    }
+    .menu-footer a:hover {
+        color: #13505B;
+    }
     .description-home{
         display: flex;
         align-items: center;
@@ -434,14 +478,16 @@ footer {
         padding: 60px 70px 50px 0;
         text-align: left;
     }
-    
+    .slider-info {
+        width: 50%;
+    }
     .projects-title {
         text-align: left;
         padding-left: 20px;
     }
     .projects-card {
         display: flex;
-        width: 70%;
+        width: 80%;
         padding: 10px 20px;
     }
     
@@ -457,6 +503,13 @@ footer {
     .card-province {
         padding: 10px 0 20px 0;
     }
+    .newsletter {
+        display: flex;
+        justify-content: space-around;
+    }
+    .newsletter input {
+        width: 100%;
+    }
 
     /* .galeria{
         grid-template-columns: repeat(4,1fr);
@@ -466,5 +519,13 @@ footer {
 @media only screen and (min-width:1024px) and (max-width:1200px){
     .card {
         width: 80%;
-    }
+    }   
 }
+@media only screen and (min-width:1400px) {
+    .newsletter input {
+        width: 100%;
+    }
+    .projects-card {
+        width: 70%;
+    }
+} 
