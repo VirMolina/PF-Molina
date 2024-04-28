@@ -11,19 +11,19 @@
 }
 
 body {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 /* NAV BAR */
 
 .navbar {
-    background-color: rgba(4, 4, 4, 0.897);
+    background-color: hsla(0, 0%, 2%, 0.898);
 }
-#logo {
+.logo {
     height: 50px;
 } 
 .nav-link {
-    color: #fff !important;
+    color: #ffffff !important;
     font-size: 14px !important;
     font-family:  "Poppins", sans-serif !important;
 }
@@ -31,7 +31,7 @@ body {
     color: #119DA4;
 }
 .navbar-toggler {
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -40,7 +40,7 @@ h1 {
     text-transform: uppercase;
     font-family:"Dosis", sans-serif;
     font-size: 45px;
-    color: #fff;
+    color: #ffffff;
 }
 h2, h3, h4 {
     text-transform: uppercase;
@@ -56,7 +56,7 @@ h2, h3, h4 {
 p {
     font-family: "Inter Tight", sans-serif;
 }
-.negrita {
+.bold {
     font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ p {
 /* BOTONES */
 .button {
     background-color: #119DA4; 
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     font-size: medium;
@@ -77,15 +77,16 @@ p {
 
 
 /* PÁGINA HOME */
-.index { 
-    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/mundo.png);
+.header-home { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/mundo.webp);
     background-size: cover;
     background-position: center;
     height: 650px;
     display: flex;
     align-items: center;
 }
-.index-title {
+
+.header-title {
     text-transform: uppercase;
     font-family:"Dosis", sans-serif;
     font-size: 45px;
@@ -114,7 +115,7 @@ p {
     display: flex;
     align-items: center; 
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/boca.png);
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/boca.webp);
     background-size: cover;
     background-position: center;     
 }
@@ -128,27 +129,20 @@ p {
     color: white;
     text-transform: uppercase;
     align-items: center;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px #040404;
     padding: 40px 10px;
 }
-/* .card-button {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Inter Tight", sans-serif;
-    padding: 10px 20px;
-} */
-
 
 /* FICHAS CASOS DE ÉXITO */
 
 .projects-title {
-    padding-top: 25px;
+    padding-top: 40px;
 }
 .projects {
     padding: 30px;
     display: grid; 
     place-items: center;
+    background-color: #ffffff;
 }
 .projects-card{   
     border: 2px solid #13505B;
@@ -158,9 +152,11 @@ p {
 .card-image{
     min-height: 250px;
     width: 100%;
-    background-image: url(../assets/images/Explora\ Salta.png);
     background-size: cover;
     background-position: center; 
+}
+.image-home {
+    background-image: url(../assets/images/ExploraSalta.webp);
 }
 .card-text {
     width: 100%;
@@ -173,27 +169,6 @@ p {
 .card-province {
     padding: 10px 0 20px 0;
 }
-
-/* .ficha {
-    display: flex;
-    justify-content: center;
-    border: 2px solid #13505B;
-    width: 90%;
-    max-width: 100%; 
-    padding: 10px 20px;
-}
-.imagen-contenedor {
-    width: 100%;
-}
-.imagen-contenedor img {
-    width: 100%;
-}
-.texto-contenedor {
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 20px;
-} */
-
 
 /* FOOTER */
 footer {
@@ -208,7 +183,7 @@ footer {
     margin-top: 5%;
     padding: 10px 0;
     background-color: #13505B;
-    color: white;
+    color: #ffffff;
 }
 .newsletter .item {
     display: flex;
@@ -241,7 +216,7 @@ footer {
     align-items: center;
     text-align: center;
     font-family: "Dosis", sans-serif;
-    padding: 20px 0 30px; 
+    padding: 20px 0 40px; 
 }
 .menu-footer ul {
     list-style: none;
@@ -250,50 +225,147 @@ footer {
 }
 .menu-footer a {
     text-decoration: none;
-    color: #000;
+    color: #040404;
+}
+.copyright {
+    font-size: 15px;
+    padding-top: 10px;
 }
 
 
 
 /* PÁGINA NOSOTROS */
-.descripcion-centrado {
+.header-nosotros { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/cck6.webp);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.description-center {
     display: block;
+    text-align: center;
     width: 70%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #ffffff;
 }
-.tabla-como-trabajamos img {
-    max-width: 80px;
+.description-center h2 {
+    padding: 15px 0;
 }
-.tabla-como-trabajamos {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0 30px;
+.picture {
+    background-image: url(../assets/images/cck3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+/* COMO TRABAJAMOS */
+.work {
+    font-family: "Dosis", sans-serif;
+    padding: 20px 0 30px; 
+    background-color: #ffffff;
+}
+.work h2 {
+    padding: 20px;
+}
+.work ul {
+    list-style: none;
+    display: inline-block;
     text-align: center;
 }
-.tabla-como-trabajamos th {
-    font-family: "Inter Tight", sans-serif; 
-    font-size: large;
+.work h4 {
+    padding: 30px;
+    font-size: 20px;
 }
-.tabla-como-trabajamos td {
-    font-family: "Inter Tight", sans-serif; 
+.work p {
+    padding: 0 25px;
 }
-.tabla-equipo {
-    font-family: "Inter Tight", sans-serif;
+.img {
+    padding-top: 30px;
 }
-.logos-alianzas {
-    background-color: #0C7489 ;
-    width: 100%;
+.work-image1 {
+    background-image: url(../assets/icons/diseño.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100px;
 }
-.tabla-equipo {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0 30px;
-    text-align: center;
+.work-image2 {
+    background-image: url(../assets/icons/anteproyecto.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
 }
-.tabla-equipo img {
-    max-width: 200px;
+.work-image3 {
+    background-image: url(../assets/icons/proyecto.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image4 {
+    background-image: url(../assets/icons/puesta-en-marcha.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image5 {
+    background-image: url(../assets/icons/postventa.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+/* NUESTRO EQUIPO */
+.team {
+    background-color: #0C7489 ;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+.team h2 {
+    padding: 20px 0;
+}
+.team-image1 {
+    background-image: url(../assets/images/laura.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image2 {
+    background-image: url(../assets/images/mariano.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image3 {
+    background-image: url(../assets/images/marcos.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image4 {
+    background-image: url(../assets/images/luciano.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+/* NUESTRA HISTORIA */
+
+.image-nosotros {
+    background-image: url(../assets/images/vino.webp);
 }
 
 
