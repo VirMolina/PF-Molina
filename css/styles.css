@@ -369,25 +369,50 @@ footer {
 }
 
 
+
 /* PÁGINA APLICACIONES */
-.verticales {
+.header-aplicaciones { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/casa-foa.webp);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+.market {
     display: block;
     width: 100%;
     max-width: 100%; 
 }
-.verticales1, .verticales2, .verticales3 {
+.market1, .market2, .market3 {
     display: flex;
 }
-.imagen-verticales {
+.img-market {
     width: 100%;
 }
-.imagen-verticales img {
+.img-market img {
+    width: 100%;
+} 
+.img-market1 {
+    background-image: url(../assets/images/cultura.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.img-market2 {
+    background-image: url(../assets/images/arquitectura2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.img-market3{
+    background-image: url(../assets/images/arquitectura.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.text-market {
     width: 100%;
 }
-.texto-verticales {
-    width: 100%;
-}
-.texto-verticales p, .texto-verticales h3 {
+.text-market p, .text-market h3 {
     padding: 30px; 
 }
 .franja {
@@ -398,6 +423,12 @@ footer {
 
 
 /* PÁGINA PROYECTOS */
+.header-proyectos { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/auto.webp);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
 .filtro {
     display: flex;
     justify-content: space-around;
@@ -419,6 +450,12 @@ footer {
 
 
 /* PÁGINA CONTACTO: FORMULARIO */
+.header-contacto { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/explora-salta2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
 .formulario input, label, textarea {
     display:block;
     width: 100%;
