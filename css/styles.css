@@ -363,7 +363,6 @@ footer {
 }
 
 /* NUESTRA HISTORIA */
-
 .image-nosotros {
     background-image: url(../assets/images/vino.webp);
 }
@@ -421,6 +420,11 @@ footer {
     height: 20px;
 }
 
+/* PROYECTOS DESTACADOS */
+.image-aplicaciones {
+    background-image: url(../assets/images/prisma2.webp);
+}
+
 
 /* PÁGINA PROYECTOS */
 .header-proyectos { 
@@ -438,15 +442,10 @@ footer {
 .menu-filtro a {
     color: black !important;
 }
-.galeria {
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    justify-content: space-around;
+.projects-gallery {
+    padding: 20px
 }
-.galeria img { 
-    width: 99%;
-}
+
 
 
 /* PÁGINA CONTACTO: FORMULARIO */

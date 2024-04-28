@@ -21,7 +21,8 @@
         <!-- navbar inicia -->
         <nav class="navbar navbar-expand-md fixed-top navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/images/logo.webp" alt="Logo PD"></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/images/logo.webp"
+                        alt="Logo PD"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <i class="fa-solid fa-bars"></i>
@@ -48,7 +49,7 @@
         <!-- navbar fin -->
     </header>
 
-    
+
     <main>
         <!-- Foto portada inicia -->
         <section class="header-proyectos">
@@ -58,12 +59,13 @@
         <!-- Descripción inicia -->
         <section id="sobre-nosotros" class="description-center">
             <h2 class="centrado">Diseñamos experiencias que conectan a las personas</h2>
-            <p>Brindamos soluciones tecnológicas integrales para el ámbito corporativo, arquitectura e interiorismo, educación, cultura y entretenimiento.</p>
+            <p>Brindamos soluciones tecnológicas integrales para el ámbito corporativo, arquitectura e interiorismo,
+                educación, cultura y entretenimiento.</p>
         </section>
         <!-- Descripción fin -->
 
-
-        <section class="filtro">
+        <!-- Filtro inicia - No estoy segura como hacer esto. Lo dejo para la próxima entrega -->
+        <!-- <section class="filtro">
             <nav class="menu-filtro">
                 <ul>
                     <li><a href="">ARTE</a></li>
@@ -74,25 +76,50 @@
                     <li><a href="">ARQUITECTURA DIGITAL</a></li>
                     <li><a href="">PARQUES TEMATICOS</a></li>
                 </ul>
-            </nav>  
-        </section>
-        <section class="galeria">
-            <div><img src="../assets/images/cck 2.png" alt="CCK">
-            <img src="../assets/images/cck 4.png" alt="CCK"></div>
-            <div><img src="../assets/images/explora salta 3.png" alt="Explora Salta">
-            <img src="../assets/images/museo del deporte.png" alt="Museo del Deporte"></div>
+            </nav>
+        </section> -->
+        <!-- Filtro fin -->
+
+
+        <!-- Galería inicia -->
+        <div class="row projects-gallery">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="../assets/gallery/franciscus.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Franciscus" />
+
+                <img src="../assets/gallery/Les visitan1.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Les Visitants" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="../assets/gallery/malvinas3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo de Malvinas" />
+
+                <img src="../assets/gallery/deporte.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo del Deporte" />
+            </div> 
             
-        </section>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="../assets/gallery/google.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo Güemes" />
+
+                <img src="../assets/gallery/mushal3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo de San Luis" />
+            </div>
+        </div>
+        <!-- Galería fin -->
     </main>
-    
+
     <footer>
         <!-- suscripción newsletter inicia -->
 
         <section class="newsletter">
-            <div class="item item1"><label for="suscribe"><h4>¿Querés suscribirte a nuestro Newsletter?</h4></label></div>
+            <div class="item item1"><label for="suscribe">
+                    <h4>¿Querés suscribirte a nuestro Newsletter?</h4>
+                </label></div>
             <div class="item item2"><input type="email" id="suscribe" required placeholder="Ingresá tu email"></div>
             <div class="item item3"><a class="button">suscribite</a></div>
-        </section> 
+        </section>
         <!-- suscripción newsletter fin -->
 
         <section class="footer">
@@ -121,25 +148,25 @@
                     <div class="col-lg-3 d-grid">
                         <h5>NOSOTROS</h5>
                         <ul class="list-inline mx-auto justify-content-center">
-                            <li><a href="./pages/nosotros.html#sobre-nosotros">Quienes somos</a></li>
-                            <li><a href="./pages/nosotros.html#como-trabajamos">Como trabajamos</a></li>
-                            <li><a href="./pages/nosotros.html#equipo">Nuestro equipo</a></li>
+                            <li><a href="nosotros.html#sobre-nosotros">Quienes somos</a></li>
+                            <li><a href="nosotros.html#como-trabajamos">Como trabajamos</a></li>
+                            <li><a href="nosotros.html#equipo">Nuestro equipo</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 d-grid">
                         <h5>APLICACIONES</h5>
                         <ul class="list-inline mx-auto justify-content-center">
-                            <li><a href="./pages/aplicaciones.html#cultura">Cultura y entretenimiento</a></li>
-                            <li><a href="./pages/aplicaciones.html#arquitectura">Arquitectura</a></li>
-                            <li><a href="./pages/aplicaciones.html#corporativo">Corporativo</a></li>
+                            <li><a href="aplicaciones.html#cultura">Cultura y entretenimiento</a></li>
+                            <li><a href="aplicaciones.html#arquitectura">Arquitectura</a></li>
+                            <li><a href="aplicaciones.html#corporativo">Corporativo</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 d-grid">
                         <h5>PROYECTOS</h5>
                         <ul class="list-inline mx-auto justify-content-center">
-                            <li><a href="./pages/proyectos.html">Museos</a></li>
-                            <li><a href="./pages/proyectos.html">Arquitectura digital</a></li>
-                            <li><a href="./pages/proyectos.html">Parques temáticos</a></li>
+                            <li><a href="proyectos.html">Museos</a></li>
+                            <li><a href="proyectos.html">Arquitectura digital</a></li>
+                            <li><a href="proyectos.html">Parques temáticos</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 d-grid">
