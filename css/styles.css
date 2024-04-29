@@ -452,7 +452,7 @@ footer {
 .header-contacto { 
     background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/explora-salta2.webp);
     background-size: cover;
-    background-position: center;
+    background-position: center top !important;
     height: 650px;
 }
 .formulario input, label, textarea {
