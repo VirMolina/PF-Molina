@@ -5,11 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Enlaces y botonoes: font-family: "Poppins", sans-serif; */
 
 // Variables de colores
-$color1: #119DA4;
-$color2: #0C7489;
-$color3: #13505B;
+$color1: #119DA4; //botones
+$color2: #0C7489; //fondos intermedios, íconos
+$color3: #13505B; //fondos oscuros
 $color4: #040404;
-$color5: #D7D9CE;
+$color5: #D7D9CE;  //fondos claros
+$color6: #fff;
 
 // Importando partials
 @import "_nosotros";
@@ -25,7 +26,7 @@ $color5: #D7D9CE;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: $color6;
 }
 
 /* NAV BAR */
@@ -37,15 +38,15 @@ body {
     height: 50px;
 } 
 .nav-link {
-    color: #ffffff !important;
+    color: $color6 !important;
     font-size: 14px !important;
     font-family:  "Poppins", sans-serif !important;
 }
 .nav-link a:hover {
-    color: #119DA4;
+    color: $color1;
 }
 .navbar-toggler {
-    color: #ffffff;
+    color: $color6;
 }
 
 
@@ -54,7 +55,7 @@ h1 {
     text-transform: uppercase;
     font-family:"Dosis", sans-serif;
     font-size: 45px;
-    color: #ffffff;
+    color: $color6;
 }
 h2, h3, h4 {
     text-transform: uppercase;
@@ -79,8 +80,8 @@ p {
 
 /* BOTONES */
 .button {
-    background-color: #119DA4; 
-    color: #ffffff;
+    background-color: $color1; 
+    color: $color6;
     text-transform: uppercase;
     text-decoration: none;
     font-size: medium;
@@ -104,7 +105,7 @@ p {
     text-transform: uppercase;
     font-family:"Dosis", sans-serif;
     font-size: 45px;
-    color: #040404;
+    color: $color4;
     text-shadow: 0 0 5px #000;
     padding-left: 50px;
     width: 80%;
@@ -140,10 +141,10 @@ p {
 .slider-info h2 {
     font-family:"Dosis", sans-serif;
     font-size: 30px;
-    color: white;
+    color: $color6;
     text-transform: uppercase;
     align-items: center;
-    text-shadow: 0 0 5px #040404;
+    text-shadow: 0 0 5px $color4;
     padding: 40px 10px;
 }
 
@@ -156,10 +157,10 @@ p {
     padding: 30px;
     display: grid; 
     place-items: center;
-    background-color: #ffffff;
+    background-color: $color6;
 }
 .projects-card{   
-    border: 2px solid #13505B;
+    border: 2px solid $color3;
     width: 90%;
     padding: 10px 10px;
 }
@@ -186,7 +187,7 @@ p {
 
 /* FOOTER */
 footer {
-    background-color: #D7D9CE;
+    background-color: $color5;
 }
 .newsletter {
     display: grid;
@@ -196,8 +197,8 @@ footer {
     width: 100%;
     margin-top: 5%;
     padding: 10px 0;
-    background-color: #13505B;
-    color: #ffffff;
+    background-color: $color3;
+    color: $color6;
 }
 .newsletter .item {
     display: flex;
@@ -221,7 +222,7 @@ footer {
     padding: 30px;
 }
 .social-icons a {
-        color: #0C7489;
+        color: $color2;
         text-decoration: none;
         font-size: 30px;
         letter-spacing: 8px;
@@ -239,7 +240,7 @@ footer {
 }
 .menu-footer a {
     text-decoration: none;
-    color: #040404;
+    color: $color4;
 }
 .copyright {
     font-size: 15px;
