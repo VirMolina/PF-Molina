@@ -1,0 +1,132 @@
+/* PÁGINA NOSOTROS */
+.header-nosotros { 
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/cck6.webp);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.description-center {
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.description-center h2 {
+    padding: 15px 0;
+}
+.picture {
+    background-image: url(../assets/images/cck3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+/* COMO TRABAJAMOS */
+.work {
+    font-family: "Dosis", sans-serif;
+    padding: 20px 0 30px; 
+    background-color: #ffffff;
+}
+.work h2 {
+    padding: 20px;
+}
+.work ul {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.work h4 {
+    padding: 30px;
+    font-size: 20px;
+}
+.work p {
+    padding: 0 25px;
+}
+.img {
+    padding-top: 30px;
+}
+.work-image1 {
+    background-image: url(../assets/icons/diseño.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image2 {
+    background-image: url(../assets/icons/anteproyecto.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image3 {
+    background-image: url(../assets/icons/proyecto.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image4 {
+    background-image: url(../assets/icons/puesta-en-marcha.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.work-image5 {
+    background-image: url(../assets/icons/postventa.webp);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+/* NUESTRO EQUIPO */
+.team {
+    background-color: #0C7489 ;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+.team h2 {
+    padding: 20px 0;
+}
+.team-image1 {
+    background-image: url(../assets/images/laura.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image2 {
+    background-image: url(../assets/images/mariano.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image3 {
+    background-image: url(../assets/images/marcos.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.team-image4 {
+    background-image: url(../assets/images/luciano.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+/* NUESTRA HISTORIA */
+.image-nosotros {
+    background-image: url(../assets/images/vino.webp);
+}
