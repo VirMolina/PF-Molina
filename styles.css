@@ -600,6 +600,18 @@ p {
   background-position: center;
 }
 
+.image-home1 {
+  background-image: url(../assets/images/ExploraSalta.webp);
+}
+
+.image-home2 {
+  background-image: url(../assets/images/casa-foa2.webp);
+}
+
+.image-home3 {
+  background-image: url(../assets/images/museo-del-deporte.webp);
+}
+
 .card-text {
   width: 100%;
   padding: 5;
