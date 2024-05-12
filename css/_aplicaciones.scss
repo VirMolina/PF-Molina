@@ -8,6 +8,11 @@ $color5: #D7D9CE;  //fondos claros
 $color6: #fff;
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* PÁGINA APLICACIONES */
 .header-aplicaciones {

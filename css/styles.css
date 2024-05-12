@@ -5,11 +5,13 @@
 /* Párrafo y subtítulos: "Inter Tight", sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Enlaces y botonoes: font-family: "Poppins", sans-serif; */
-/* @import "_nosotros";
+@import "_nosotros";
 @import "_aplicaciones";
 @import "_proyectos";
 @import "_contacto";
-@import "_media-queries"; */
+@import "_media-queries";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +36,7 @@ body {
   font-size: 14px !important;
   font-family: "Poppins", sans-serif !important;
 }
-.nav-link :hover {
+.nav-link:hover {
   color: #119DA4 !important;
 }
 
@@ -117,6 +119,9 @@ p {
   padding: 5px 20px;
   border-radius: 2px;
   box-shadow: 2px 2px 2px #292929;
+}
+.button:hover {
+  color: #13505B;
 }
 
 /* FOTO PORTADA */
@@ -588,7 +593,7 @@ footer {
 }
 .gallery .item2 {
   grid-area: img2;
-  background-image: url(../assets/gallery/museo-de-la-constitución2.webp);
+  background-image: url(../assets/gallery/museo-de-la-constitucion2.webp);
 }
 .gallery .item3 {
   grid-area: img3;
