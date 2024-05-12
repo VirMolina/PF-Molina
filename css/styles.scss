@@ -50,7 +50,7 @@ body {
     color: $color6 ;
     font-size: 14px !important;
     font-family: "Poppins", sans-serif !important;
-    :hover {
+    &:hover {
         color: $color1 !important;
     }
 }
@@ -135,6 +135,9 @@ p {
     padding: 5px 20px;
     border-radius: 2px;
     @include shadow;
+    &:hover {
+        color: $color4 !important;
+    }
 }
 
 
