@@ -10,50 +10,57 @@ $color6: #fff;
 
 
 /* PÁGINA APLICACIONES */
-.header-aplicaciones { 
+.header-aplicaciones {
     background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/casa-foa.webp);
     background-size: cover;
     background-position: center;
     height: 650px;
+    display: flex;
+    align-items: center;
 }
+
 .market {
     display: block;
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
 }
-.market1, .market2, .market3 {
+
+.market1,
+.market2,
+.market3 {
     display: flex;
 }
-.img-market {
-    width: 100%;
-}
-.img-market img {
-    width: 100%;
-} 
+
 .img-market1 {
     background-image: url(../assets/images/cultura.webp);
     background-size: cover;
     background-position: center;
     height: 500px;
 }
+
 .img-market2 {
     background-image: url(../assets/images/arquitectura2.webp);
     background-size: cover;
     background-position: center;
     height: 500px;
 }
-.img-market3{
+
+.img-market3 {
     background-image: url(../assets/images/arquitectura.webp);
     background-size: cover;
     background-position: center;
     height: 500px;
 }
+
 .text-market {
     width: 100%;
 }
-.text-market p, .text-market h3 {
-    padding: 30px; 
+
+.text-market p,
+.text-market h3 {
+    padding: 30px;
 }
+
 .franja {
     background-color: $color5;
     width: 100%;
@@ -61,6 +68,15 @@ $color6: #fff;
 }
 
 /* PROYECTOS DESTACADOS */
-.image-aplicaciones {
+.image-aplicaciones1 {
     background-image: url(../assets/images/prisma2.webp);
 }
+
+.image-aplicaciones2 {
+    background-image: url(../assets/images/guemes.webp);
+}
+
+.image-aplicaciones3 {
+    background-image: url(../assets/images/raghsa.webp);
+}
+

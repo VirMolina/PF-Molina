@@ -8,21 +8,97 @@ $color5: #D7D9CE;  //fondos claros
 $color6: #fff;
 
 /* PÁGINA PROYECTOS */
-.header-proyectos { 
+.header-proyectos {
     background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/auto.webp);
     background-size: cover;
     background-position: center;
     height: 650px;
-}
-.filtro {
     display: flex;
-    justify-content: space-around;
-    width: 100% !important;
+    align-items: center;
+}
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8";
+    grid-gap: 15px;
+    padding: 20px;
+
+    .item {
+        background-size: cover;
+        background-position: center;
+        border-radius: 7px;
+        @include shadow;
+        transition: all 0.7s;
+        h3 {
+            color: transparent;
+            padding: 0 10px;
+        }
+
+        &:hover {
+            transform: scale(1.09);
+            h3 {
+                color: #ffffff;
+                text-shadow: 0 0 5px #040404;
+                font-size: 28px;
+                text-transform: uppercase;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .item1 {
+        grid-area: img1;
+        background-image: url(../assets/gallery/don-bosco.webp);
+    }
+
+    .item2 {
+        grid-area: img2;
+        background-image: url(../assets/gallery/museo-de-la-constitución2.webp);
+    }
+
+    .item3 {
+        grid-area: img3;
+        background-image: url(../assets/gallery/les-visitan1.webp);
+    }
+
+    .item4 {
+        grid-area: img4;
+        background-image: url(../assets/gallery/franciscus.webp);
+    }
+
+    .item5 {
+        grid-area: img5;
+        background-image: url(../assets/gallery/google.webp);
+    }
+
+    .item6 {
+        grid-area: img6;
+        background-image: url(../assets/gallery/prisma.webp);
+    }
+
+    .item7 {
+        grid-area: img7;
+        background-image: url(../assets/gallery/malvinas3.webp);
+    }
+
+    .item8 {
+        grid-area: img8;
+        background-image: url(../assets/gallery/san-francsico2.webp);
+        background-position: bottom;
+    }
 }
-.menu-filtro a {
-    color: #000 !important;
-}
-.projects-gallery {
-    padding: 20px
-}
+

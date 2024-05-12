@@ -22,6 +22,10 @@ $color6: #fff;
 @import "_contacto";
 @import "_media-queries";
 
+@mixin shadow {
+    box-shadow: 2px 2px 2px #292929;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -68,30 +72,37 @@ h4 {
     font-family: "Inter Tight", sans-serif;
 }
 
-.header-color {
-    background-color: #119DA4;
-    max-width: 295px;
-    text-indent: 0.2em;
-    text-transform: uppercase;
-    font-family: "Dosis", sans-serif;
-    font-size: 45px;
-    color: $color4;
-    text-shadow: 0 0 2px $color5;
-}
-
 $colors: (
-original: #0C7489,
-red: #890c0c,
-yellow: #89720c,
-green: rgb(17, 164, 91),
-blue: #0c4689
-);
+    original: #0C7489,
+    red: #890c0c,
+    yellow: #89720c,
+    green: rgb(17, 164, 91),
+    blue: #0c4689
+    );
 
 @each $name,$color in $colors {
     .#{$name} {
         background-color:$color;
     }
+}    
+
+.rectangle {
+    height: 45px;
+    width: 230px;
+    @include shadow;
 }
+
+.header-color {
+    text-indent: 0.2em;
+    max-width: 900px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 35px;
+    color: $color4;
+    text-shadow: 0 0 2px $color5; 
+}
+
+
 
 .lateral {
     text-align: left;
@@ -123,6 +134,7 @@ p {
     font-family: "Poppins", sans-serif;
     padding: 5px 20px;
     border-radius: 2px;
+    @include shadow;
 }
 
 
@@ -223,6 +235,8 @@ p {
     height: 950px;
     padding: 10px 10px;
     background-color: #f1f1ef;
+    @include shadow;
+    border-radius: 7px;
 }
 
 .card-image {
@@ -589,12 +603,11 @@ footer {
     padding: 20px;
 
     .item {
-        background-color: #040404;
         background-size: cover;
         background-position: center;
         border-radius: 7px;
+        @include shadow;
         transition: all 0.7s;
-        border: #040404;
         h3 {
             color: transparent;
             padding: 0 10px;
@@ -716,6 +729,14 @@ textarea {
 }
 
 @media only screen and (min-width: 440px) {
+    .rectangle {
+        height: 55px;
+        width: 300px;
+    }
+    .header-color {
+        font-size: 42px;
+    }
+
     .projects-card {
         height: 720px;
     }

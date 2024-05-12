@@ -9,11 +9,13 @@ $color6: #fff;
 
 
 /* PÁGINA NOSOTROS */
-.header-nosotros { 
+.header-nosotros {
     background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/cck6.webp);
     background-size: cover;
     background-position: center;
     height: 650px;
+    display: flex;
+    align-items: center;
 }
 
 .description-center {
@@ -23,10 +25,11 @@ $color6: #fff;
     margin: 0 auto;
     padding: 20px;
     background-color: $color6;
-}
-.description-center h2 {
+    h2 {
     padding: 15px 0;
+    }
 }
+
 .picture {
     background-image: url(../assets/images/cck3.webp);
     background-size: cover;
@@ -37,27 +40,29 @@ $color6: #fff;
 /* COMO TRABAJAMOS */
 .work {
     font-family: "Dosis", sans-serif;
-    padding: 20px 0 30px; 
+    padding: 20px 0 30px;
     background-color: $color6;
-}
-.work h2 {
+    h2 {
     padding: 20px;
-}
-.work ul {
+    }
+    ul {
     list-style: none;
     display: inline-block;
     text-align: center;
-}
-.work h4 {
+    }
+    h4 {
     padding: 30px;
     font-size: 20px;
-}
-.work p {
+    }
+    p {
     padding: 0 25px;
+    }
 }
+
 .img {
     padding-top: 30px;
 }
+
 .work-image1 {
     background-image: url(../assets/icons/diseño.webp);
     background-size: 100px;
@@ -65,6 +70,7 @@ $color6: #fff;
     background-position: center;
     height: 100px;
 }
+
 .work-image2 {
     background-image: url(../assets/icons/anteproyecto.webp);
     background-size: 100px;
@@ -72,6 +78,7 @@ $color6: #fff;
     background-position: center;
     height: 100px;
 }
+
 .work-image3 {
     background-image: url(../assets/icons/proyecto.webp);
     background-size: 100px;
@@ -79,6 +86,7 @@ $color6: #fff;
     background-position: center;
     height: 100px;
 }
+
 .work-image4 {
     background-image: url(../assets/icons/puesta-en-marcha.webp);
     background-size: 100px;
@@ -86,6 +94,7 @@ $color6: #fff;
     background-position: center;
     height: 100px;
 }
+
 .work-image5 {
     background-image: url(../assets/icons/postventa.webp);
     background-size: 100px;
@@ -103,10 +112,11 @@ $color6: #fff;
     padding-bottom: 30px;
     text-align: center;
     color: #ffffff;
-}
-.team h2 {
+    h2 {
     padding: 20px 0;
+    }
 }
+
 .team-image1 {
     background-image: url(../assets/images/laura.webp);
     background-size: 200px;
@@ -114,6 +124,7 @@ $color6: #fff;
     background-position: center;
     height: 200px;
 }
+
 .team-image2 {
     background-image: url(../assets/images/mariano.webp);
     background-size: 200px;
@@ -121,6 +132,7 @@ $color6: #fff;
     background-position: center;
     height: 200px;
 }
+
 .team-image3 {
     background-image: url(../assets/images/marcos.webp);
     background-size: 200px;
@@ -128,6 +140,7 @@ $color6: #fff;
     background-position: center;
     height: 200px;
 }
+
 .team-image4 {
     background-image: url(../assets/images/luciano.webp);
     background-size: 200px;
@@ -137,6 +150,15 @@ $color6: #fff;
 }
 
 /* NUESTRA HISTORIA */
-.image-nosotros {
+.image-nosotros1 {
     background-image: url(../assets/images/vino.webp);
+    background-position: right !important;
+}
+
+.image-nosotros2 {
+    background-image: url(../assets/images/temaiken.webp);
+}
+
+.image-nosotros3 {
+    background-image: url(../assets/images/mushal.webp);
 }

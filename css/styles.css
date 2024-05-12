@@ -11,6 +11,8 @@
   background-size: cover;
   background-position: center;
   height: 650px;
+  display: flex;
+  align-items: center;
 }
 
 .description-center {
@@ -21,7 +23,6 @@
   padding: 20px;
   background-color: #fff;
 }
-
 .description-center h2 {
   padding: 15px 0;
 }
@@ -39,22 +40,18 @@
   padding: 20px 0 30px;
   background-color: #fff;
 }
-
 .work h2 {
   padding: 20px;
 }
-
 .work ul {
   list-style: none;
   display: inline-block;
   text-align: center;
 }
-
 .work h4 {
   padding: 30px;
   font-size: 20px;
 }
-
 .work p {
   padding: 0 25px;
 }
@@ -113,7 +110,6 @@
   text-align: center;
   color: #ffffff;
 }
-
 .team h2 {
   padding: 20px 0;
 }
@@ -151,8 +147,17 @@
 }
 
 /* NUESTRA HISTORIA */
-.image-nosotros {
+.image-nosotros1 {
   background-image: url(../assets/images/vino.webp);
+  background-position: right !important;
+}
+
+.image-nosotros2 {
+  background-image: url(../assets/images/temaiken.webp);
+}
+
+.image-nosotros3 {
+  background-image: url(../assets/images/mushal.webp);
 }
 
 /* PÁGINA APLICACIONES */
@@ -161,6 +166,8 @@
   background-size: cover;
   background-position: center;
   height: 650px;
+  display: flex;
+  align-items: center;
 }
 
 .market {
@@ -169,16 +176,10 @@
   max-width: 100%;
 }
 
-.market1, .market2, .market3 {
+.market1,
+.market2,
+.market3 {
   display: flex;
-}
-
-.img-market {
-  width: 100%;
-}
-
-.img-market img {
-  width: 100%;
 }
 
 .img-market1 {
@@ -206,7 +207,8 @@
   width: 100%;
 }
 
-.text-market p, .text-market h3 {
+.text-market p,
+.text-market h3 {
   padding: 30px;
 }
 
@@ -217,8 +219,16 @@
 }
 
 /* PROYECTOS DESTACADOS */
-.image-aplicaciones {
+.image-aplicaciones1 {
   background-image: url(../assets/images/prisma2.webp);
+}
+
+.image-aplicaciones2 {
+  background-image: url(../assets/images/guemes.webp);
+}
+
+.image-aplicaciones3 {
+  background-image: url(../assets/images/raghsa.webp);
 }
 
 /* PÁGINA PROYECTOS */
@@ -476,17 +486,6 @@ h4 {
   font-family: "Inter Tight", sans-serif;
 }
 
-.header-color {
-  background-color: #119DA4;
-  max-width: 295px;
-  text-indent: 0.2em;
-  text-transform: uppercase;
-  font-family: "Dosis", sans-serif;
-  font-size: 45px;
-  color: #040404;
-  text-shadow: 0 0 2px #D7D9CE;
-}
-
 .original {
   background-color: #0C7489;
 }
@@ -505,6 +504,22 @@ h4 {
 
 .blue {
   background-color: #0c4689;
+}
+
+.rectangle {
+  height: 45px;
+  width: 230px;
+  box-shadow: 2px 2px 2px #292929;
+}
+
+.header-color {
+  text-indent: 0.2em;
+  max-width: 900px;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  color: #040404;
+  text-shadow: 0 0 2px #D7D9CE;
 }
 
 .lateral {
@@ -534,6 +549,7 @@ p {
   font-family: "Poppins", sans-serif;
   padding: 5px 20px;
   border-radius: 2px;
+  box-shadow: 2px 2px 2px #292929;
 }
 
 /* FOTO PORTADA */
@@ -624,6 +640,8 @@ p {
   height: 950px;
   padding: 10px 10px;
   background-color: #f1f1ef;
+  box-shadow: 2px 2px 2px #292929;
+  border-radius: 7px;
 }
 
 .card-image {
@@ -975,12 +993,11 @@ footer {
   padding: 20px;
 }
 .gallery .item {
-  background-color: #040404;
   background-size: cover;
   background-position: center;
   border-radius: 7px;
+  box-shadow: 2px 2px 2px #292929;
   transition: all 0.7s;
-  border: #040404;
 }
 .gallery .item h3 {
   color: transparent;
@@ -1085,6 +1102,13 @@ textarea {
   }
 }
 @media only screen and (min-width: 440px) {
+  .rectangle {
+    height: 55px;
+    width: 300px;
+  }
+  .header-color {
+    font-size: 42px;
+  }
   .projects-card {
     height: 720px;
   }
