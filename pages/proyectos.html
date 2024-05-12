@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos inicia -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos fin -->     
+
     <!-- bs 5.2 inicia -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- bs 5.2 fin -->
+
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Casos de éxito de Proyecciones Digitales </title>
     <meta name="description" content="Desarrollamos soluciones novedosas y eficaces que potencien las experiencias de nuestros clientes. Compartimos con ustedes nuestros casos de éxito."> 
@@ -59,56 +65,26 @@
         <!-- Foto portada fin -->
 
         <!-- Descripción inicia -->
-        <section id="sobre-nosotros" class="description-center">
+        <section id="sobre-nosotros" class="description-center" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="centrado">Diseñamos experiencias que conectan a las personas</h2>
             <p>Brindamos soluciones tecnológicas integrales para el ámbito corporativo, arquitectura e interiorismo,
                 educación, cultura y entretenimiento.</p>
         </section>
         <!-- Descripción fin -->
 
-        <!-- Filtro inicia - No estoy segura como hacer esto. Lo dejo para la próxima entrega -->
-        <!-- <section class="filtro">
-            <nav class="menu-filtro">
-                <ul>
-                    <li><a href="">ARTE</a></li>
-                    <li><a href="">PROYECTOS INTERACTIVOS</a></li>
-                    <li><a href="">EXPERIENCIAS INMERSIVAS</a></li>
-                    <li><a href="">MUSEOS</a></li>
-                    <li><a href="">CORPORATIVO</a></li>
-                    <li><a href="">ARQUITECTURA DIGITAL</a></li>
-                    <li><a href="">PARQUES TEMATICOS</a></li>
-                </ul>
-            </nav>
-        </section> -->
-        <!-- Filtro fin -->
-
 
         <!-- Galería inicia -->
-        <div class="row projects-gallery">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="../assets/gallery/franciscus.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Franciscus" />
+        <div class="gallery">
+                <div class="item item1"><h5>Museo de Don Bosco</h5></div>
+                <div class="item item2"><h5>Museo de la Constitución</h5></div>
+                <div class="item item3"><h5>Les Visitants</h5></div>
+                <div class="item item4"><h5>Franciscus</h5></div>
+                <div class="item item5"><h5>Google</h5></div>
+                <div class="item item6"><h5>PRISMA</h5></div>
+                <div class="item item7"><h5>Museo de Malvinas</h5></div>
+                <div class="item item8"><h5>Convento de San Francisco</h5></div>
+        </div>        
 
-                <img src="../assets/gallery/Les visitan1.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Les Visitants" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../assets/gallery/malvinas3.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo de Malvinas" />
-
-                <img src="../assets/gallery/deporte.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo del Deporte" />
-            </div> 
-            
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../assets/gallery/google.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo Güemes" />
-
-                <img src="../assets/gallery/mushal3.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Museo de San Luis" />
-            </div>
-        </div>
         <!-- Galería fin -->
     </main>
 
@@ -187,6 +163,12 @@
         </section>
     </footer>
 
+    <!-- aos inicia -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos fin -->    
     <!-- bs 5.2 inicia -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

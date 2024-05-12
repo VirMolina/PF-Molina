@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos inicia -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos fin -->   
+
     <!-- bs 5.2 inicia -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- bs 5.2 fin -->
+
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Ingeniería de esperiencias para todos los ámbitos </title>
     <meta name="description" content="Desarrollamos experiencias inmersivas para el ámbito corporativo, arquitectura e interiorismo, educación, cultura y entretenimiento."> 
@@ -58,7 +64,7 @@
         <!-- Foto portada fin -->
 
         <!-- Descripción inicia -->
-        <section id="sobre-nosotros" class="description-center">
+        <section id="sobre-nosotros" class="description-center" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="centrado">Entrelazamos los mundos físicos y digitales para crear experiencias</h2>
             <p>La tecnología audiovisual ha revolucionado la manera en que nos comunicamos y nos relacionamos con nuestro entorno y con los demás; permite que los materiales estáticos cuenten historias de una manera más dinámica y atractiva. A través de los espacios inmersivos, la realidad virtual, el diseño interactivo y otras tecnologías innovadoras, podemos hacer visible lo invisible y crear experiencias sensoriales únicas que antes no eran posibles.</p>
             <p>Con veintisiete años como líderes en la industria audiovisual, estamos obsesionados con desarrollar soluciones novedosas y eficaces que potencien las experiencias de nuestros clientes. Brindamos un servicio integral de primer nivel para el ámbito corporativo, arquitectura e interiorismo, educación, cultura y entretenimiento.</p>
@@ -77,11 +83,11 @@
             </section>
 
             <section id="arquitectura" class="market2">               
-                <div class="text-market">
+                <div class="sec text-market">
                     <h3>Arquitectura</h3>
                     <p>La Arquitectura de Medios combina los campos de la tecnología, el diseño y la comunicación para crear experiencias innovadoras y centradas en el usuario, ofreciendo nuevas posibilidades para la creatividad, la expresión artística, la información visual y la participación del público en el entorno construido. A través de la integración de tecnología inteligente y sistemas interactivos, los edificios se convierten en plataformas para contar historias, transmitir mensajes, fomentar la colaboración y promover la participación del usuario.</p> 
                 </div>
-                <div class="img-market img-market2">
+                <div class="sec img-market img-market2">
                 </div>             
             </section>
 
@@ -98,17 +104,59 @@
         <!-- Verticales fin -->
 
         <!-- Tarjetas proyectos destacados inicia -->
-        <h2 class="center projects-title">Proyectos destacados</h2>
-        <section class="projects">
-            <article class="projects-card">
-                <div class="card-image image-aplicaciones"></div>
-                <div class="card-text">
-                    <h3 class="card-title">PRISMA</h3>
-                    <h4 class="card-province">CABA, Buenos Aires</h4>
-                    <p class="card-description">Esta instalación se encuentra en el Hall de ingreso principal y replica en forma digital un Jardín Vertical natural que se encuentra en un Hall interno. Se instaló un sistema de Video Wall Kinect de 7x4mts dividido en cuatro pantallas de Led Panasonic, animadas por cuatro motores Wahlberg y controlados por DMX. Las pantallas se desplazan verticalmente, dando la sensación de estar flotando en este espacio. </p>
+        <div class="container h-100">
+            <div id="carousel-cards" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                <!-- Cards -->
+                <div class="container my-4 w-100" >
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="projects">
+                                <article class="projects-card">
+                                    <div class="card-image image-aplicaciones1"></div>
+                                    <div class="card-text">
+                                        <h3 class="card-title">PRISMA</h3>
+                                        <h4 class="card-province">CABA, Buenos Aires</h4>
+                                        <p class="card-description">Esta instalación se encuentra en el Hall de ingreso principal y replica en forma digital un Jardín Vertical natural que se encuentra en un Hall interno. Se instaló un sistema de Video Wall Kinect de 7x4mts dividido en cuatro pantallas de Led Panasonic, animadas por cuatro motores Wahlberg y controlados por DMX. Las pantallas se desplazan verticalmente, dando la sensación de estar flotando en este espacio. </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>    
+
+                        <div class="carousel-item">
+                            <div class="projects">
+                                <article class="projects-card">
+                                    <div class="card-image image-aplicaciones2"></div>
+                                    <div class="card-text">
+                                        <h3 class="card-title">Museo Güemes</h3>
+                                        <h4 class="card-province">Salta</h4>
+                                        <p class="card-description">El Museo Güemes propone un recorrido por la historia del General Martín Miguel de Güemes y la gesta emancipadora de un modo didáctico, único e innovador. Compuesto por diez salas, cada una despliega un recurso escénico y audiovisual distinto, en busca de mantener la atención de los visitantes de todas las edades. Las técnicas de exhibición incluyen efectos escenográficos, lumínicos, programas multimedia y presentaciones audiovisuales, que convierten a cada visitante en el protagonista de una experiencia sensorial inolvidable. </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="projects">
+                                <article class="projects-card">
+                                    <div class="card-image image-aplicaciones3"></div>
+                                    <div class="card-text">
+                                        <h3 class="card-title">Raghsa</h3>
+                                        <h4 class="card-province">CABA, Buenos Aires</h4>
+                                        <p class="card-description">Un Video Wall de doble cara, con monitores de gran formato, enclavado en el interior de la recepción brinda información sobre las empresas inquilinas del edificio y cambia al ritmo de las estaciones del año. Los contenidos acompañan los diferentes momentos del día, cambiando su temática, paleta de colores y ritmo para la mañana, la tarde y la noche.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </section>
+            </div>
+        </div>
         <!-- Tarjetas proyectos destacados fin -->
     </main>
     
@@ -185,6 +233,12 @@
         </section>
     </footer>
 
+    <!-- aos inicia -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos fin -->    
     <!-- bs 5.2 inicia -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
