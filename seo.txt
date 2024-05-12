@@ -1,0 +1,18 @@
+1- Las imágenes están en formato webp para mejorar la velocidad de carga de la página. 
+
+2- Incluí etiquetas <title> en todas las páginas para indicar tanto a los usuarios como a los motores de búsqueda el tema sobre el que trata cada página. 
+
+3- Incluí la metaetiqueta de descripción en todas las páginas para ofrecer a Google y a otros buscadores un resumen del contenido de las mismas.
+
+4- Incluí la metaetiqueta Keywords en todas las páginas para identificar los términos con los cuales deseó que el sitio web sea encontrado por los motores de búsqueda. 
+
+5- Utilicé etiquetas de encabezado para crear una estructura jerárquica de contenido.
+
+6- Cree un archivo de sitemap que incluye todas las URL relevantes del sitio web ayudando a que los buscadores descubran las páginas.
+
+7- El sitio es 100% responsivo desde una resolución mínima de 320px hasta 1200px.
+
+8- Utilicé etiquetas alt en las imágenes y un buen contraste de color para mejorar la accesibilidad.
+
+9- Mantuve una coherencia a la hora de declarar las clases y IDs, aplicando metodología kebab-case.
+
