@@ -135,7 +135,6 @@ p {
     padding: 5px 20px;
     border-radius: 2px;
     @include shadow;
-    text-decoration: underline;
     &:hover {
         color: $color4 !important;
     }
