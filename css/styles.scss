@@ -510,7 +510,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 650px;
-    display: flex;
+    display: flex; 
     align-items: center;
 }
 
@@ -526,25 +526,23 @@ footer {
     display: flex;
 }
 
-.img-market1 {
-    background-image: url(../assets/images/cultura.webp);
+.img-market {
     background-size: cover;
     background-position: center;
     height: 500px;
+    width: 100%;
+}
+
+.img-market1 {
+    background-image: url(../assets/images/cultura.webp); 
 }
 
 .img-market2 {
     background-image: url(../assets/images/arquitectura2.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 
 .img-market3 {
     background-image: url(../assets/images/arquitectura.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 
 .text-market {
@@ -768,8 +766,6 @@ textarea {
 
     .market {
         display: block;
-        width: 100%;
-        max-width: 100%;
     }
 
     .market1,
