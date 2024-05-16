@@ -275,6 +275,28 @@ p {
     padding: 10px 0 20px 0;
 }
 
+.carousel-control-prev {
+    left: -10%;
+}
+
+.carousel-control-next {
+    right: -10%;
+}
+
+.carousel {
+    .carousel-indicators {
+        top: 100%;
+
+        button {
+            height:50px;
+            width:50px;
+            background-color: $color1;
+            border: 1px solid $color3;
+            border-radius: 50%;
+            }
+    }
+}
+
 
 
 /* FOOTER */
