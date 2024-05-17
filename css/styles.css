@@ -248,6 +248,14 @@ p {
   padding: 10px 0 20px 0;
 }
 
+.button-project-prev {
+  left: -3%;
+}
+
+.button-project-next {
+  right: -3%;
+}
+
 .carousel-indicators {
   top: 100%;
 }
@@ -762,6 +770,13 @@ textarea {
   .projects-card {
     height: 620px;
   }
+  .carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
   .menu-footer a:hover {
     color: #13505B;
   }
@@ -843,6 +858,12 @@ textarea {
   .projects-card {
     height: 500px;
   }
+  .button-project-prev {
+    left: -7%;
+  }
+  .button-project-next {
+    right: -7%;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .newsletter input {
@@ -851,4 +872,10 @@ textarea {
   .projects-card {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+  .button-project-prev {
+    left: -10%;
+}
+  .button-project-next {
+    right: -10%;
+}
+}

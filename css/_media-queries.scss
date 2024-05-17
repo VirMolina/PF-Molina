@@ -77,6 +77,12 @@
             }
         }
     }
+    .carousel-control-prev {
+        left: -5%;
+    }
+    .carousel-control-next {
+        right: -5%;
+    }
 }
 
 
@@ -245,5 +251,13 @@
 
     .projects-card {
         width: 100%;
+    }
+
+    .button-project-prev {
+        left: -10%;
+    }
+
+    .button-project-next {
+        right: -10%;
     }
 }
