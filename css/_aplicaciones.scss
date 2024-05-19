@@ -1,18 +1,5 @@
 
-// Variables de colores
-$color1: #119DA4; //botones
-$color2: #0C7489; //fondos intermedios, íconos
-$color3: #13505B; //fondos oscuros
-$color4: #040404;
-$color5: #D7D9CE;  //fondos claros
-$color6: #fff;
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* PÁGINA APLICACIONES */
 .header-aplicaciones {
@@ -36,25 +23,23 @@ $color6: #fff;
     display: flex;
 }
 
-.img-market1 {
-    background-image: url(../assets/images/cultura.webp);
+.img-market {
     background-size: cover;
     background-position: center;
     height: 500px;
+    width: 100%;
+}
+
+.img-market1 {
+    background-image: url(../assets/images/cultura.webp);
 }
 
 .img-market2 {
     background-image: url(../assets/images/arquitectura2.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 
 .img-market3 {
     background-image: url(../assets/images/arquitectura.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 
 .text-market {

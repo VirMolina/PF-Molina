@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Enlaces y botonoes: font-family: "Poppins", sans-serif; */
 
-// Variables de colores
+// VARIABLES DE COLORES
 $color1: #119DA4; //botones
 $color2: #0C7489; //fondos intermedios, íconos
 $color3: #13505B; //fondos oscuros
@@ -15,23 +15,20 @@ $color4: #040404;
 $color5: #D7D9CE; //fondos claros
 $color6: #fff;
 
-// Importando partials
-@import "_nosotros";
-@import "_aplicaciones";
-@import "_proyectos";
-@import "_contacto";
-@import "_media-queries";
-
+//MIXIN
 @mixin shadow {
     box-shadow: 2px 2px 2px #292929;
 }
 
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* COMIENZO DE INDEX */
 body {
     background-color: $color6;
 }
@@ -102,11 +99,9 @@ $colors: (
     text-shadow: 0 0 2px $color5; 
 }
 
-
-
 .lateral {
     text-align: left;
-    margin: 20px;
+    margin: 30px;
 }
 
 .center {
@@ -120,7 +115,6 @@ p {
 .bold {
     font-weight: bold;
 }
-
 
 
 
@@ -235,7 +229,7 @@ p {
 .projects-card {
     border: 3px solid $color3;
     width: 100%;
-    height: 950px;
+    height: 1050px;
     padding: 10px 10px;
     background-color: #f1f1ef;
     @include shadow;
@@ -284,14 +278,14 @@ p {
 }
 
 .carousel {
+    
     .carousel-indicators {
-        top: 100%;
-
+        top: 100%;       
         button {
-            height:50px;
-            width:50px;
-            background-color: $color1;
-            border: 1px solid $color3;
+            height:10px;
+            width:10px;
+            background-color: $color1 !important;
+            border: 1px solid $color3 !important;
             border-radius: 50%;
             }
     }
@@ -302,6 +296,7 @@ p {
 /* FOOTER */
 footer {
     background-color: $color5;
+    margin-top: 50px;
 }
 
 .newsletter {
@@ -373,3 +368,9 @@ footer {
     padding-top: 10px;
 }
 
+// IMPORTANDO PARTIALS
+@import "_nosotros";
+@import "_aplicaciones";
+@import "_proyectos";
+@import "_contacto";
+@import "_media-queries";
