@@ -323,8 +323,7 @@
 .map {
   padding-top: 60px;
 }
-
-iframe {
+.map iframe {
   max-width: 100%;
 }
 
@@ -745,10 +744,6 @@ footer {
   }
   .newsletter input {
     width: 35%;
-  }
-  .map {
-    width: 400px;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
