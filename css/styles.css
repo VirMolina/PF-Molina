@@ -5,335 +5,6 @@
 /* Párrafo y subtítulos: "Inter Tight", sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Enlaces y botonoes: font-family: "Poppins", sans-serif; */
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* COMIENZO DE INDEX */
-body {
-  background-color: #fff;
-}
-
-/* NAV BAR */
-.navbar {
-  background-color: hsla(0, 0%, 2%, 0.898);
-}
-
-.logo {
-  height: 50px;
-}
-
-.nav-link {
-  color: #fff;
-  font-size: 14px !important;
-  font-family: "Poppins", sans-serif !important;
-}
-.nav-link:hover {
-  color: #119DA4 !important;
-}
-
-/* TEXTO */
-h1 {
-  text-transform: uppercase;
-  font-family: "Dosis", sans-serif;
-  font-size: 45px;
-  color: #fff;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-  font-family: "Inter Tight", sans-serif;
-}
-
-.original {
-  background-color: #0C7489;
-}
-
-.red {
-  background-color: #890c0c;
-}
-
-.yellow {
-  background-color: #89720c;
-}
-
-.green {
-  background-color: rgb(17, 164, 91);
-}
-
-.blue {
-  background-color: #0c4689;
-}
-
-.rectangle {
-  height: 45px;
-  width: 230px;
-  box-shadow: 2px 2px 2px #292929;
-}
-
-.header-color {
-  text-indent: 0.2em;
-  max-width: 900px;
-  text-transform: uppercase;
-  font-family: "Dosis", sans-serif;
-  font-size: 35px;
-  color: #040404;
-  text-shadow: 0 0 2px #D7D9CE;
-}
-
-.lateral {
-  text-align: left;
-  margin: 30px;
-}
-
-.center {
-  text-align: center;
-}
-
-p {
-  font-family: "Inter Tight", sans-serif;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-/* BOTONES */
-.button {
-  background-color: #119DA4;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: medium;
-  font-family: "Poppins", sans-serif;
-  padding: 5px 20px;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px #292929;
-}
-.button:hover {
-  color: #040404 !important;
-}
-
-/* FOTO PORTADA */
-.header-home {
-  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/mundo.webp);
-  background-size: cover;
-  background-position: center;
-  height: 650px;
-  display: flex;
-  align-items: center;
-}
-
-.header-title {
-  text-transform: uppercase;
-  font-family: "Dosis", sans-serif;
-  font-size: 45px;
-  color: #040404;
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-  padding-left: 50px;
-  width: 80%;
-}
-
-/* TEXTO DESCRIPCIÓN HOME */
-.nleft {
-  padding: 40px 0 20px;
-}
-
-.nright {
-  width: 100%;
-  text-align: center;
-  padding: 30px;
-}
-
-/* SLIDER APLICACIONES DEL HOME */
-.carousel-inner1 {
-  width: 100%;
-  height: 700px;
-  padding-bottom: 50px;
-}
-.carousel-inner1 .carousel-item {
-  width: 100%;
-  height: 100%;
-}
-.carousel-inner1 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.carousel-inner1 .carousel-item::before {
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.432), rgba(39, 39, 39, 0.3));
-  z-index: 1;
-  mix-blend-mode: multiply;
-}
-.carousel-inner1 .carousel-item .carousel-caption {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  z-index: 2;
-}
-.carousel-inner1 .carousel-item .carousel-caption h2 {
-  font-family: "Dosis", sans-serif;
-  font-size: 25px;
-  text-shadow: 0 0 5px #040404;
-  text-transform: uppercase;
-  padding-bottom: 40px;
-}
-
-/* FICHAS CASOS DE ÉXITO */
-.projects-title {
-  padding-top: 40px;
-}
-
-.projects {
-  padding: 30px;
-  display: grid;
-  place-items: center;
-}
-
-.projects-card {
-  border: 3px solid #13505B;
-  width: 100%;
-  height: 1050px;
-  padding: 10px 10px;
-  background-color: #f1f1ef;
-  box-shadow: 2px 2px 2px #292929;
-  border-radius: 7px;
-}
-
-.card-image {
-  min-height: 250px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.image-home1 {
-  background-image: url(../assets/images/explora-salta.webp);
-}
-
-.image-home2 {
-  background-image: url(../assets/images/casa-foa2.webp);
-}
-
-.image-home3 {
-  background-image: url(../assets/images/museo-del-deporte.webp);
-}
-
-.card-text {
-  width: 100%;
-  padding: 5;
-  text-align: center;
-}
-
-.card-title {
-  padding-top: 15px;
-}
-
-.card-province {
-  padding: 10px 0 20px 0;
-}
-
-.button-project-prev {
-  left: -7%;
-}
-
-.button-project-next {
-  right: -7%;
-}
-
-.carousel .carousel-indicators {
-  top: 100%;
-}
-.carousel .carousel-indicators button {
-  height: 10px;
-  width: 10px;
-  background-color: #119DA4 !important;
-  border: 1px solid #13505B !important;
-  border-radius: 50%;
-}
-
-/* FOOTER */
-footer {
-  background-color: #D7D9CE;
-  margin-top: 50px;
-}
-
-.newsletter {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 60px);
-  text-align: center;
-  width: 100%;
-  margin-top: 5%;
-  padding: 10px 0;
-  background-color: #13505B;
-  color: #fff;
-}
-
-.newsletter .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-.newsletter input {
-  width: 50%;
-  height: 25px;
-}
-
-.item1 {
-  font-size: 7px;
-}
-
-.footer {
-  padding: 30px;
-}
-
-.social-icons {
-  text-align: center;
-  padding: 30px;
-}
-.social-icons a {
-  color: #0C7489;
-  text-decoration: none;
-  font-size: 30px;
-  letter-spacing: 8px;
-}
-.social-icons a :hover {
-  color: #119DA4;
-}
-
-.menu-footer {
-  align-items: center;
-  text-align: center;
-  font-family: "Dosis", sans-serif;
-  padding: 20px 0 40px;
-}
-.menu-footer ul {
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-}
-.menu-footer a {
-  text-decoration: none;
-  color: #040404;
-}
-
-.copyright {
-  font-size: 15px;
-  padding-top: 10px;
-}
-
 /* PÁGINA NOSOTROS */
 .header-nosotros {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/cck6.webp);
@@ -667,6 +338,335 @@ textarea {
 
 .formulario div {
   padding: 10px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COMIENZO DE INDEX */
+body {
+  background-color: #fff;
+}
+
+/* NAV BAR */
+.navbar {
+  background-color: hsla(0, 0%, 2%, 0.898);
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 14px !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.nav-link:hover {
+  color: #119DA4 !important;
+}
+
+/* TEXTO */
+h1 {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.original {
+  background-color: #0C7489;
+}
+
+.red {
+  background-color: #890c0c;
+}
+
+.yellow {
+  background-color: #89720c;
+}
+
+.green {
+  background-color: rgb(17, 164, 91);
+}
+
+.blue {
+  background-color: #0c4689;
+}
+
+.rectangle {
+  height: 45px;
+  width: 230px;
+  box-shadow: 2px 2px 2px #292929;
+}
+
+.header-color {
+  text-indent: 0.2em;
+  max-width: 900px;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  color: #040404;
+  text-shadow: 0 0 2px #D7D9CE;
+}
+
+.lateral {
+  text-align: left;
+  margin: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* BOTONES */
+.button {
+  background-color: #119DA4;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 20px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #292929;
+}
+.button:hover {
+  color: #040404 !important;
+}
+
+/* FOTO PORTADA */
+.header-home {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.3)), url(../assets/images/mundo.webp);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 45px;
+  color: #040404;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  padding-left: 50px;
+  width: 80%;
+}
+
+/* TEXTO DESCRIPCIÓN HOME */
+.nleft {
+  padding: 40px 0 20px;
+}
+
+.nright {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+/* SLIDER APLICACIONES DEL HOME */
+.carousel-inner1 {
+  width: 100%;
+  height: 700px;
+  padding-bottom: 50px;
+}
+.carousel-inner1 .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner1 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-inner1 .carousel-item::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.432), rgba(39, 39, 39, 0.3));
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+.carousel-inner1 .carousel-item .carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 2;
+}
+.carousel-inner1 .carousel-item .carousel-caption h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  text-shadow: 0 0 5px #040404;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+/* FICHAS CASOS DE ÉXITO */
+.projects-title {
+  padding-top: 40px;
+}
+
+.projects {
+  padding: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.projects-card {
+  border: 3px solid #13505B;
+  width: 100%;
+  height: 1100px;
+  padding: 10px 10px;
+  background-color: #f1f1ef;
+  box-shadow: 2px 2px 2px #292929;
+  border-radius: 7px;
+}
+
+.card-image {
+  min-height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-home1 {
+  background-image: url(../assets/images/explora-salta.webp);
+}
+
+.image-home2 {
+  background-image: url(../assets/images/casa-foa2.webp);
+}
+
+.image-home3 {
+  background-image: url(../assets/images/museo-del-deporte.webp);
+}
+
+.card-text {
+  width: 100%;
+  padding: 5;
+  text-align: center;
+}
+
+.card-title {
+  padding-top: 15px;
+}
+
+.card-province {
+  padding: 10px 0 20px 0;
+}
+
+.button-project-prev {
+  left: -7%;
+}
+
+.button-project-next {
+  right: -7%;
+}
+
+.carousel .carousel-indicators {
+  top: 100%;
+}
+.carousel .carousel-indicators button {
+  height: 10px;
+  width: 10px;
+  background-color: #119DA4 !important;
+  border: 1px solid #13505B !important;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #D7D9CE;
+  margin-top: 50px;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 60px);
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  padding: 10px 0;
+  background-color: #13505B;
+  color: #fff;
+}
+
+.newsletter .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.newsletter input {
+  width: 50%;
+  height: 25px;
+}
+
+.item1 {
+  font-size: 7px;
+}
+
+.footer {
+  padding: 30px;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 30px;
+}
+.social-icons a {
+  color: #0C7489;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+.social-icons a :hover {
+  color: #119DA4;
+}
+
+.menu-footer {
+  align-items: center;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  padding: 20px 0 40px;
+}
+.menu-footer ul {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+.menu-footer a {
+  text-decoration: none;
+  color: #040404;
+}
+
+.copyright {
+  font-size: 15px;
+  padding-top: 10px;
 }
 
 /* COMIENZO DE MEDIA QUERIES */
