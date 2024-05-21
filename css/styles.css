@@ -324,6 +324,10 @@
   padding-top: 60px;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .formulario input,
 label,
 textarea {
@@ -741,6 +745,10 @@ footer {
   }
   .newsletter input {
     width: 35%;
+  }
+  .map {
+    width: 400px;
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
